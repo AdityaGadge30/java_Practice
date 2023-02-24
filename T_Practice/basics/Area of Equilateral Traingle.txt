@@ -1,0 +1,21 @@
+
+public class Main
+{
+    
+    public static double area(int side){
+        
+        double res = 0.433 * side ;
+        //Under Root of 3 divided by 4 = 0.433
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		
+		int side = 2;
+		
+		System.out.print(area(side));
+		
+	}
+}

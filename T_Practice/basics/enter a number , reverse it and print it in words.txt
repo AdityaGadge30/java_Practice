@@ -1,0 +1,75 @@
+
+public class Main
+{
+    
+
+    
+    public static void Freq_of_Digit(int n){
+       
+       int temp = n;
+            while (temp > 0){
+                
+                int digit = temp % 10;
+                
+                if(digit == 1){
+                
+                    System.out.print("One" + " ");
+                    temp = temp /10;
+                }else if(digit == 2){
+                
+                    System.out.print("Two" + " ");
+                    temp = temp /10;
+                    
+                }else if(digit == 3){
+                
+                    System.out.print("Three" + " ");
+                    temp = temp /10;
+                }else if(digit == 4){
+                
+                    System.out.print("Four" + " ");
+                    temp = temp /10;
+                    
+                }else if(digit == 5){
+                
+                    System.out.print("Five" + " ");
+                
+                    temp = temp /10;
+                }else if(digit == 6){
+                
+                    System.out.print("Six" + " ");
+                    temp = temp /10;
+                    
+                }else if(digit == 7){
+                
+                    System.out.print("Seven" + " ");
+                    temp = temp /10;
+                }else if(digit == 8){
+                
+                    System.out.print("Eight" + " ");
+                    temp = temp /10;
+                }else if(digit == 9){
+                
+                    System.out.print("Nine" + " ");
+                    temp = temp /10;
+                }else{
+                
+                    System.out.print("zero" + " ");
+                    temp = temp /10;
+                }
+                
+            }
+            
+            
+    }
+    
+    
+    
+
+    
+	public static void main(String[] args) {
+
+
+    int num = 125312;
+    Freq_of_Digit(num);
+	}
+}

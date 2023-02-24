@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+     
+     Scanner in = new Scanner(System.in);
+     
+     
+     
+     System.out.println("Enter the radius " );
+     int x = in.nextInt();
+     
+    
+     area_nd_radius_of_circle(x);
+        
+    }
+    
+    
+    static void area_nd_radius_of_circle(int radius){
+        
+        double pi = 3.14;
+        
+        System.out.println("Area of circle is " + pi*radius*radius);
+        
+        System.out.println("Circumference of circle is " + 2*pi*radius);
+    }
+    
+    
+}

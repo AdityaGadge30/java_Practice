@@ -1,0 +1,25 @@
+
+public class Main
+{
+    public static void largest(int[] num){
+        
+        int max = num[0];
+        
+        for(int i=0;i<num.length;i++){
+            if(num[i]>max){
+                max = num[i];
+            }
+        }
+        
+        System.out.print(max);
+    }
+    
+	public static void main(String[] args) {
+	    
+	    int[] num1 = {10 , 20 , 4 , 25 };
+	    
+		
+	    largest(num1);
+	}
+	
+}

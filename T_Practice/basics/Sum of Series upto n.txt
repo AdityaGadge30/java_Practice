@@ -1,0 +1,35 @@
+
+import java.util.*;
+
+class series{
+    
+    int num;
+    
+    public series(int n){
+        this.num = n;
+    } 
+    
+    public void count_add_series(){
+        
+        System.out.println((num*(num+1))/2);
+    } 
+    
+} 
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("enter the number upto which series have to count addition ");
+		
+		int n = sc.nextInt();
+		
+		series ss = new series(n);
+		ss.count_add_series();
+		
+	}
+}

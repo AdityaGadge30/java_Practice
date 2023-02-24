@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+    
+    Scanner in = new Scanner(System.in);
+    
+    System.out.println("Enter the Number to check : ");
+    int n = in.nextInt();
+    
+    check(n);
+    
+        }
+        
+        static void check(int num){
+            
+            if(num==0){
+                System.out.println("Given Number is Zero");
+            }else if(num % 2 == 0){
+                System.out.println(num + " is Even Number ");
+            }else{
+                System.out.println(num + " is Odd Number");
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+}

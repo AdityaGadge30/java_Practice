@@ -1,0 +1,27 @@
+
+public class Main
+{
+    
+    public static int fact(int num1){
+        int n = 1;
+        while(num1!=0){
+            n=n*num1;
+            n--;
+        }
+        
+        return n;
+    }
+    
+    
+    
+	public static void main(String[] args) {
+
+	int num1=6;
+	int num2=4;
+	
+	int NCR = fact(num1) / (fact(num2) * fact(num1-num2));
+	
+	System.out.print(NCR);
+		
+	}
+}

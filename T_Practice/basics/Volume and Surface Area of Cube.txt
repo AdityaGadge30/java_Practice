@@ -1,0 +1,21 @@
+
+public class Main
+{
+    
+    public static double area(int side){
+
+        double volume = side * side * side ;
+        
+        System.out.println("volume of cube " + volume);
+        System.out.print("Surface Area of cube ");
+        double res = 6 * side * side;
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		int side = 2;
+		System.out.print(area(side));
+		
+	}
+}

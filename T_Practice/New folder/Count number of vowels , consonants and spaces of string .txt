@@ -1,0 +1,47 @@
+import java.util.*;
+
+
+public class Main
+{
+    
+    public static void fun(String str){
+        str = str.toLowerCase();
+        
+        int vowel_count =0;
+        int consonant_count = 0;
+        int space_count = 0;
+        
+        for(int i=0; i<=str.length()-1; i++){
+            
+            if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' ||
+            str.charAt(i) == 'o' || str.charAt(i) == 'u' ){
+                
+                vowel_count ++ ;
+                    
+            }else{
+                 consonant_count ++;
+            }
+            
+            if(str.charAt(i) == ' '){
+                space_count ++ ;
+            }
+            
+            
+            
+            
+        }
+        
+        System.out.print(str + " contains " + vowel_count + " vowels , " + consonant_count + " consonants and " + space_count + " spaces");
+        
+        
+    }
+    
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		
+		String ss = "Hello World";
+		
+		fun(ss);
+		
+	}
+}

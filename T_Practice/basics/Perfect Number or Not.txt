@@ -1,0 +1,32 @@
+
+public class Main
+{
+    public static void perfect(int num){
+        
+        int temp = num;
+        int sum =1;
+        
+        for(int i=2;i<num;i++){
+            
+            if(num % i == 0){
+                sum = sum +i;
+            }
+        }
+        
+        if(sum == num){
+            System.out.println("Perfect Number");
+        }else{
+            System.out.println("Not Perfect Number");
+        }
+        
+    }
+    
+    
+	public static void main(String[] args) {
+	
+	int num = 6;
+	
+	perfect(num);
+	
+	}
+}

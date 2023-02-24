@@ -1,0 +1,32 @@
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	    Scanner sc = new Scanner(System.in);
+	    
+		System.out.println("Enter The First Term of G.P ");
+		float a = sc.nextInt();
+
+        System.out.println("Enter The No of terms of G.P ");
+		float n = sc.nextInt();
+
+        System.out.println("Enter The Difference between term of G.P ");
+		float d = sc.nextInt();
+
+        	float tn = (float)(a* (1- Math.pow(d , n-1)));
+        
+        
+		float sum = (float)(a*(1- Math.pow(d,n+1))) / (1-d);
+        		
+		System.out.print("Sum of G.P  is " + sum);
+		
+		System.out.print("Tnth term of G.P is " + tn);
+		
+		
+	
+		
+	}
+}

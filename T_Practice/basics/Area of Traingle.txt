@@ -1,0 +1,20 @@
+
+public class Main
+{
+    
+    public static double area(int height , int breadth){
+        
+        double res = 0.5 * height * breadth ;
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		int height = 2;
+		int breadth = 2;
+		
+		System.out.print(area(height , breadth));
+		
+	}
+}

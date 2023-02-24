@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String args[]) {
+      
+        Scanner in = new Scanner(System.in);
+
+      System.out.println("Enter The Number of which you have to count factorial ");
+      int n = in.nextInt();
+      
+      int ans  = Calulate_Fact(n);
+      System.out.println(ans);
+    }
+    
+    static int Calulate_Fact(int n){
+        
+        int i , fact = 1;
+        
+        for(i=1 ; i<=n ; i++){
+            
+            fact = fact * i ;
+        }
+         System.out.println("Enter The Number of which you have to count factorial ");
+        return fact;
+    } 
+}

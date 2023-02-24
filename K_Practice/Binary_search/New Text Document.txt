@@ -1,0 +1,15 @@
+Problem Statement
+Ninja took you to an apple store where there is 'N' number of different apples present in the store and ith apple cost 'ARR[i]' coins. It is pre-decided that you have to buy all of them. You would be given a coupon by Ninja that allows you to buy ‘M’ apples while paying only for 'M - 1' most expensive apples. Thus, you will get the cheapest apple for free. You can use the coupon once only.
+Now, Ninja requested you to tell the minimum total coins required to buy all apples if the coupon is used optimally. It is necessary to use the coupon and have to select ‘M’ apples for using it.
+
+
+
+
+Ninja has an array 'ARR' consisting of 'N' integers. Your primary work is to split it into three parts so that each integer is a component of a single part only. Each part must be a consecutive contiguous subsegment of the original array and can also be empty. So, the sum of each part is denoted as 'S1', 'S2' and 'S3'. Ninja made the problem even harder by declaring a condition that 'S1' must be equal to 'S3' and 'S1' must be the maximum possible amongst all possible ways.
+The sum of the empty subsegment is 0.
+
+
+You have a total of 'B' candies and ‘N’ friends each having various demands for candies. You need to find the maximum possible value ‘X’ such that you can full fill all the demands having quantity less than or equal to ‘X’ of any of the friends. More formally, the value of all demands to be full-filled should be less than or equal to X and their total sum must be less than or equal to ‘B’.
+
+
+You have to print a regular grid pattern of 'R' rows and 'C' columns with a diamond-like shape of size 'S' in each cell of the grid. The diamond shape will contain ‘/’ and ‘\’ characters to represent the borders of the diamond and ‘o’ (small ‘o’ alphabet) to represent the space inside the diamond and ‘e’(small ‘e’ alphabet) to represent the rest of the space of diamond.

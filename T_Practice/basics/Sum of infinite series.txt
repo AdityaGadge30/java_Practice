@@ -1,0 +1,28 @@
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	    Scanner sc = new Scanner(System.in);
+	    
+		System.out.println("Enter The First Term of G.P ");
+		int a = sc.nextInt();
+
+
+        System.out.println("Enter The Difference between term of G.P ");
+		float d = sc.nextInt();
+
+        
+        
+		int sum =(int)(a / (1-d));
+        		
+		System.out.print("Sum of G.P  is " + sum);
+	
+		
+		
+	
+		
+	}
+}

@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import java.lang.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+     
+     Scanner in = new Scanner(System.in);
+     
+     
+     
+     System.out.println("Enter the Marks you bought i will display your grade " );
+     int x = in.nextInt();
+     
+    
+     grading(x);
+        
+    }
+    
+    
+    static void grading(int x){
+        
+        if(x>0 && x<=40){
+             System.out.println(" Failed " );
+        }else if(x>=41 && x<=50){
+             System.out.println(" DD " );
+        }else if(x>=51 && x<=60){
+             System.out.println(" CD " );
+        }else if(x>=61 && x<=70){
+             System.out.println(" BC " );
+        }else if(x>=71 && x<=80){
+             System.out.println(" BB " );
+        }else if(x>=81 && x<=90){
+             System.out.println(" AB " );
+        }else if(x>=91 && x<=100){
+             System.out.println(" AA " );
+        }else{
+            System.out.println("Plz enter valid marks" );
+        }
+        
+        
+      
+    }
+    
+    
+}

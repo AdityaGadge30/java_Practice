@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class Main
+{
+    public static int binary_search(int[] arr , int value){
+        
+        int left = 0; 
+        int right = arr.length -1;
+        
+        while(left <= right){
+            
+            int mid =  left + (right - 1)  /2;
+            
+            if(arr[mid] == value){
+                return mid;
+            }else if(arr[mid] < value){
+                left = mid+1;
+            }else{
+                right = mid-1;
+            }
+            
+        }
+        
+        
+        return -1;
+        
+    }
+    
+	public static void main(String[] args) {
+		
+	    int[] arr = { 12,36,52,67,77,97};
+	    
+	    int value = 7;
+	    
+	    int ans = binary_search(arr,value);
+	    
+	    if(ans == -1){
+	        System.out.print(value + " is not present in array");
+	    }else{
+	        System.out.print(value + " is present in array at index " + ans);
+	    }
+	    
+	}
+}

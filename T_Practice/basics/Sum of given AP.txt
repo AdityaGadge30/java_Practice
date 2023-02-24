@@ -1,0 +1,27 @@
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	    Scanner sc = new Scanner(System.in);
+	    
+		System.out.println("Enter The First Term of A.P ");
+		int a = sc.nextInt();
+
+        System.out.println("Enter The No of terms of A.P ");
+		int n = sc.nextInt();
+
+        System.out.println("Enter The Difference between term of A.P ");
+		int d = sc.nextInt();
+
+        		
+		System.out.print("Sum of A.P upto  is ");
+		
+		int result = (2*a + (n-1)*d)*n/2;
+		
+		System.out.print(result);
+		
+	}
+}

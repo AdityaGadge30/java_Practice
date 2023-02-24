@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+    
+    Scanner in = new Scanner(System.in);
+    
+    System.out.println("Enter the Principle amount: ");
+    int principle = in.nextInt();
+    
+    
+    System.out.println("Enter the Rate ( in percentage ): ");
+    int rate = in.nextInt();
+    
+    
+    System.out.println("Enter the Time ( in minutes) : ");
+    int time = in.nextInt();
+    
+    int ans = Simple_Interest(principle,rate,time);
+    System.out.println("Your Simple Interest for given data is " + ans);
+    
+        }
+        
+        static int Simple_Interest(int principle , int rate , int time){
+            
+            return principle*rate*time;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+}

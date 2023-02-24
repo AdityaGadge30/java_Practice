@@ -1,0 +1,38 @@
+import java.util.*;
+
+
+public class Main
+{
+    
+    public static boolean string_palindrome(String str){
+        
+        String ss = "";
+        
+        for(int i = (str.length() - 1 ); i>=0; i--){
+             ss = ss + str.charAt(i);
+        } 
+        
+        if(str.toLowerCase().equals(ss.toLowerCase())){
+            
+            return true;
+        
+        }
+        
+        return false;
+    }
+    
+	public static void main(String[] args) {
+		
+		
+		String ex = "abcdcba";
+		
+		boolean flag = string_palindrome(ex);
+		
+		if(flag){
+		    System.out.print(ex + " is palindrome String");
+		}else{
+		    System.out.print(ex + " is not palindrome String");
+		}
+		
+	}
+}

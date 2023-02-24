@@ -1,0 +1,27 @@
+
+public class Main
+{
+    
+    public static int LastDigit(int n){
+        return (n% 10);
+    }
+    
+    public static int FirstDigit(int n){
+        while(n>=10){
+            n /= 10; 
+        }
+        
+        return n;
+    }
+    
+
+    
+	public static void main(String[] args) {
+		
+	int num = 89465;
+	System.out.println("Last digit is : " + LastDigit(num));
+	System.out.println("First digit is : " + FirstDigit(num));
+    
+		
+	}
+}

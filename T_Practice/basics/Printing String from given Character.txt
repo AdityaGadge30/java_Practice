@@ -1,0 +1,24 @@
+
+public class Main
+{
+    public static void string_from_character(String s1 , char c){
+        
+        for(int i=0;i<s1.length();i++){
+        
+                if(s1.charAt(i) == c ){
+                    System.out.print(s1.substring(i));
+                }
+        }
+        
+        
+    }
+    
+	public static void main(String[] args) {
+	    
+	    String s1 = "hello kjbjkbk";
+	    Character c = 'e';
+	    
+	    string_from_character(s1,c);
+	    
+	}
+}

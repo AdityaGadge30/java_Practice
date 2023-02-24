@@ -1,0 +1,46 @@
+
+public class Main
+{
+    public static boolean perfect(int num){
+       
+        int temp = num;
+        int sum =1;
+        
+        for(int i=2;i<num;i++){
+            
+            if(num % i == 0){
+                sum = sum +i;
+
+            }
+        }
+        
+        
+
+        if(sum == num){
+           // System.out.println("Perfect Number");
+            return true;
+            
+        }else{
+            return false;
+            //System.out.println("Not Perfect Number");
+        }        
+    }
+    
+
+	public static void main(String[] args) {
+	
+	
+	
+	int num = 7;
+	
+	for(int i=1;i<num;i++){
+	    
+	    if(perfect(i)){
+	        System.out.print(i + " ");
+	    }
+	}
+	
+	
+	
+	}
+}

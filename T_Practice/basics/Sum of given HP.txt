@@ -1,0 +1,28 @@
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	
+	    Scanner sc = new Scanner(System.in);
+	    
+		System.out.println("Enter The Total Terms of H.P ");
+		int n = sc.nextInt();
+		
+		float sum =0;
+		float temp;
+
+        for(float i=1;i<=n;i++){
+            
+             temp = 1/i;
+             sum = sum + temp;
+        }
+        
+        System.out.print(sum);
+        
+        
+        
+
+	}
+}

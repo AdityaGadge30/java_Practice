@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+     
+     Scanner in = new Scanner(System.in);
+     
+     
+     
+     System.out.println("Enter First Number");
+     int x = in.nextInt();
+     System.out.println("Enter second Number");
+     int y = in.nextInt();
+     System.out.println("Enter Third Number");
+     int z = in.nextInt();
+     
+     
+     Max(x,y,z);
+     Min(x,y,z);
+     
+    }
+    
+    
+    static void Max(int x,int y,int z){
+        
+        if(x>y && x>z){
+            System.out.println(x + " is greater than "+ y + " and " + z);
+        }else if(y>x && y>z){
+            System.out.println(y + " is greater than " +x + " and " + z);
+        }else{
+            System.out.println(z + " is greater than " +x + " and " + y);
+        }
+    }
+    
+    
+    
+    static void Min(int x,int y,int z){
+        
+        if(x<y && x<z){
+            System.out.println(x + " is lesser than "+ y + " and " + z);
+        }else if(y<x && y<z){
+            System.out.println(y + " is lesser than "+ x + " and " + z);
+        }else{
+            System.out.println(z + " is lesser than " +x + " and " + y);
+        }
+    }
+}

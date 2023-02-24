@@ -1,0 +1,29 @@
+
+public class Main
+{
+    
+
+    
+    public static int Freq_of_Digit(int num , int expo){
+     
+     int power = 1;
+     for(int i=1;i<= expo;i++){
+            power =power * num;
+     }  
+    
+           return power; 
+    }
+    
+    
+    
+
+    
+	public static void main(String[] args) {
+
+
+    int num = 2;
+    int power = 7;
+    int ans = Freq_of_Digit(num , power);
+    System.out.println(power + "th Power of " + num + " is " + ans);
+	}
+}

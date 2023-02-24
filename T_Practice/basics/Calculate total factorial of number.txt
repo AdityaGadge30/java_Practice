@@ -1,0 +1,25 @@
+
+public class Main
+{
+    
+    public static int factorial(int num){
+        
+        int total = 1;
+        for(int i=1;i<=num;i++){
+            
+            if(num % i == 0){
+                total *= i; 
+                System.out.print(i + " ");
+            }
+            
+        }
+        System.out.println();
+        return total;
+    }
+    
+	public static void main(String[] args) {
+		
+		int num = 10;
+		System.out.print(factorial(num));
+	}
+}

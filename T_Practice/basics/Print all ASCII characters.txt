@@ -1,0 +1,27 @@
+
+public class Main
+{
+    
+
+    
+    public static void Freq_of_Digit(int n){
+     
+     
+     for(int i=0;i<=255;i++){
+         System.out.println("All ASCII characters values are " + (char)i + " " +i );
+     }  
+    
+            
+    }
+    
+    
+    
+
+    
+	public static void main(String[] args) {
+
+
+    int num = 125312;
+    Freq_of_Digit(num);
+	}
+}

@@ -1,0 +1,38 @@
+import java.util.*;
+
+
+public class Main
+{
+    public static String sortingstring(String str){
+        char[] c = str.toCharArray();
+        
+        Arrays.sort(c);
+        
+        return new String(c);
+    }
+    
+    
+    public static void fun(String str1 , String str2){
+    
+    
+        String s1 = sortingstring(str1);
+        String s2 = sortingstring(str2);
+        
+       
+            
+        if(s1.equals(s2)){
+            System.out.print(str1 + " and " + str2 + " are anagram of each others ");
+        }else{
+            System.out.print(str1 + " and " + str2 + " are not anagram of each others ");
+        }
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		String ss = "yahaai";
+		String sss = "haaaiy";
+		fun(ss , sss);
+		
+	}
+}

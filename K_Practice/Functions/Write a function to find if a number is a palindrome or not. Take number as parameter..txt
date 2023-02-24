@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+public class MyClass {
+    public static void main(String args[]) {
+        
+        
+     Scanner in = new Scanner(System.in);
+
+      System.out.println("Enter the Number of which we have to check " );
+      String n = in.next();
+      
+      if(check_palindrome(n) == true){
+          System.out.println(n + " is palindrome number");
+      }else{
+        System.out.println(n + " is palindrome not number");    
+      }
+      
+     
+      
+    }
+    
+    static boolean check_palindrome(String str){
+        
+        int len = str.length();
+        
+        for(int i=0 ; i< len/2 ; i++){
+            
+            if(str.charAt(i) != str.charAt(len-i-1)){
+                
+                return false;
+                
+            }
+            
+            
+        }
+        return true;
+    }
+}

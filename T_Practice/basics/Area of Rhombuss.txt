@@ -1,0 +1,19 @@
+
+public class Main
+{
+    
+    public static double area(int diagonal1, int diagonal2){
+        
+        double res = 0.5 * diagonal1 * diagonal2;
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		int diagonal1 = 2;
+		int diagonal2 = 2;
+		
+		System.out.print(area(diagonal1 , diagonal2));
+		
+	}
+}

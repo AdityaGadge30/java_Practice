@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+     
+     Scanner in = new Scanner(System.in);
+     
+     
+     
+     System.out.println("Enter the first number " );
+     int x = in.nextInt();
+     
+     System.out.println("Enter the second number " );
+     int y = in.nextInt();
+     
+     System.out.println("Sum of given numbers is " +  sum_of_two(x,y));
+    }
+    
+    
+    static int sum_of_two(int x , int y){
+        
+        return x+y;
+    }
+    
+    
+}

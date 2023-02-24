@@ -1,0 +1,56 @@
+
+class complexnumber{
+  
+    int real,img;
+  
+    public complexnumber(int r, int i){
+        this.real = r;
+        this.img = i;
+    }
+    
+    public void show(){
+        
+        System.out.print(this.real + " + " + " i" + this.img);
+    }
+  
+}    
+
+
+
+
+public class Main
+{
+    
+public static complexnumber multiply(complexnumber n1 , complexnumber n2){
+    
+    complexnumber res = new complexnumber(0,0);
+    
+    res.real = (n1.real * n2.real ) - (n1.img * n2.img);
+    res.img = (n1.real * n2.img) + (n1.img * n2.real);
+    
+    return res;
+    
+}
+    
+     
+    
+    
+	public static void main(String[] args) {
+		
+		
+		complexnumber n1 = new complexnumber(1,1);
+		complexnumber n2 = new complexnumber(1,1);
+		
+		n1.show();
+		
+		System.out.println();
+		n2.show();
+		
+		System.out.println();
+		System.out.println("Multiplication is ");
+		complexnumber result1 = multiply(n1,n2);
+		
+		result1.show();
+	
+	}
+}

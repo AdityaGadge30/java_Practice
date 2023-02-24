@@ -1,0 +1,20 @@
+
+public class Main
+{
+    
+    public static double perimeter(int side1 , int side2 , int base){
+        
+        double res =  side1 + side2 + base;
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		int side1 = 2;
+		int side2 = 2;
+		int base = 2;
+		
+		System.out.print(perimeter(side1 , side2 , base));
+		
+	}
+}

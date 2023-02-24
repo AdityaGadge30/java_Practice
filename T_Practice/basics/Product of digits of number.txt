@@ -1,0 +1,33 @@
+
+public class Main
+{
+    
+    public static int LastDigit(int n){
+        return (n% 10);
+    }
+    
+    public static int FirstDigit(int n){
+        int sum=1;
+        do{
+            int m = n % 10;
+            sum = sum * m;
+            n = n/10;
+        }while(n >0);
+        
+        return sum;
+    }
+    
+    
+    
+
+    
+	public static void main(String[] args) {
+		
+	int num = 46;
+	int sum = FirstDigit(num);
+
+	System.out.println("Sum of last digit and first digit of number is " + sum);
+    
+		
+	}
+}

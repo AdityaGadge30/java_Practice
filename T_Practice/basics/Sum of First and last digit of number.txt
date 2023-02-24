@@ -1,0 +1,35 @@
+
+public class Main
+{
+    public static void sum_of_first_and_last(int num){
+        
+        int temp = num;
+        int last = num % 10;
+        int first=0;
+        
+        while(num > 0){
+            
+
+            if(num < 10){
+                first = num;
+            }
+
+            num = num / 10;
+            
+        }
+
+        int sum = first + last;
+        
+        System.out.println(sum);
+
+        
+    }
+    
+	public static void main(String[] args) {
+	 
+	 int num1=125;
+		
+	    sum_of_first_and_last(num1);
+	}
+	
+}

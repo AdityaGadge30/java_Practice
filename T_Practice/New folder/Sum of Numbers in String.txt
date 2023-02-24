@@ -1,0 +1,43 @@
+import java.util.*;
+
+
+public class Main
+{
+    
+    public static void fun(String str){
+        
+        StringBuffer temp = new StringBuffer();
+
+        String tempsum = "0";
+        int sum =0;
+
+        for (int i = 0; i<=str.length()-1; i++ ){
+            
+            Character s = str.charAt(i);
+            
+            if(Character.isDigit(s)){
+                tempsum = tempsum + s;
+            }else{
+                
+                sum = sum + Integer.parseInt(tempsum);
+                tempsum = "0";
+            }
+            
+        } 
+        
+        int res = sum + Integer.parseInt(tempsum);
+        
+        System.out.println(str);
+        
+        System.out.print(" Sum of Numbers in String is : " + res);
+
+    }
+    
+	public static void main(String[] args) {
+		
+		String ss = "2jbhj45vvyu1";
+		
+		fun(ss);
+		
+	}
+}

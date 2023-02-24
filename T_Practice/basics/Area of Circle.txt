@@ -1,0 +1,21 @@
+
+public class Main
+{
+    
+    public static double area(int rad){
+        
+        double pi = 3.14;
+        double res = pi * rad * rad;
+        
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		int radius = 2;
+		
+		System.out.print(area(radius));
+		
+	}
+}

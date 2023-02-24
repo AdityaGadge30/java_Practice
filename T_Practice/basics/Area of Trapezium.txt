@@ -1,0 +1,22 @@
+
+public class Main
+{
+    
+    public static double area(int height , int base1 , int base2){
+        
+        int temp = base1+base2;
+        double res = 0.5 * height * temp;
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		int height = 4;
+		int base1 = 2;
+		int base2 = 2;
+		
+		System.out.print(area(height , base1 , base2));
+		
+	}
+}

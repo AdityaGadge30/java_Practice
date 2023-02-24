@@ -1,0 +1,45 @@
+
+public class Main
+{
+    public static boolean prime(int num){
+        
+        int flag = 0;
+        
+        for(int i=2; i<num;i++){
+            
+            if(num % i == 0){
+                flag = 1;
+       //         System.out.print( num + " is not prime number ");
+                break;
+            }
+            
+        }
+        
+        if(flag == 0){
+        
+        // System.out.print(num + " is  prime number");
+        
+            return true;
+        }
+        
+        return false;
+    }
+    
+	public static void main(String[] args) {
+		
+		int num=13;
+		
+		int sum =0;
+		
+		for(int i=0;i<num;i++){
+		    
+		    
+		    if(prime(i)){
+		        sum += i;
+		        System.out.print(i + " ");
+		    }
+		}
+    System.out.println();
+		System.out.print("Sum of prime Numbers from 1 to " + num + " is " + sum);
+	}
+}

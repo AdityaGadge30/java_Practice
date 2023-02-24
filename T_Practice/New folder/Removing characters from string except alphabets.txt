@@ -1,0 +1,36 @@
+import java.util.*;
+
+
+public class Main
+{
+    
+    public static void fun(String str){
+        
+        StringBuffer temp = new StringBuffer();
+        
+        str = str.toLowerCase();
+
+        for(int i=0; i<=str.length()-1; i++){
+           
+            if((int)str.charAt(i) >= 97 && (int)str.charAt(i) <=122 || (int)str.charAt(i) > 65 && (int)str.charAt(i) >= 90 ){
+                
+                temp.append(str.charAt(i));
+                
+            }     
+
+        }
+        
+        System.out.println(str);
+        System.out.println(" After removing characters except alphabets ");
+        System.out.print(temp);
+      
+    }
+    
+	public static void main(String[] args) {
+		
+		String ss = "Hello World .;' @ aditya";
+		
+		fun(ss);
+		
+	}
+}

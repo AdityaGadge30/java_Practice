@@ -1,0 +1,33 @@
+
+public class Main
+{
+    public static int hcf(int num1 , int num2){
+        
+        int min;
+        
+        if(num1>num2){
+            min = num2;
+        }else{
+            min = num1;
+        }
+        
+        int hcff=0 ;
+        for(int i=1;i<=min;i++){
+            
+            if(num1 % i == 0 && num2 % i == 0){
+                hcff = i;
+            }
+        }
+        
+        return hcff;
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		int num1=12;
+		int num2=36;
+		
+		System.out.println(hcf(num1,num2));
+	}
+}

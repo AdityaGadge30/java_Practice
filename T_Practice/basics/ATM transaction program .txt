@@ -1,0 +1,74 @@
+import java.util.*;
+
+public class Main
+{
+    
+	public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        
+        int balance = 1000;
+        
+        
+        
+        while(true){
+            System.out.println("Enter choice 1 for money deposit ");
+            System.out.println("Enter choice 2 for money Withdrawl ");
+            System.out.println("Enter choice 3 for checking Balance ");
+            System.out.println("Enter choice 4 for exit");
+            System.out.println("Enter Your Choice : ");
+            
+            
+            int choice = sc.nextInt();
+            
+            switch(choice){
+                
+                case 1:
+                    System.out.println("Enter the amount to deposit to your Account ");
+                    int deposit = sc.nextInt();
+                    
+                    balance = balance + deposit;
+                    
+                    System.out.println("Amount deposited Successfully");
+                    break;
+                
+                case 2:
+                     System.out.println("Enter the amount withdrawn from your Account ");
+                    int withdrawn = sc.nextInt();
+                    
+                    
+                    if(balance>=withdrawn){
+                        balance = balance - withdrawn;
+                        
+                        System.out.println("Money Withdrawed Successfully");
+                    }else{
+                        System.out.println("Insufficient Balance");
+                    }
+                    
+                    
+                    break;
+                
+                case 3:
+                    System.out.println("Your Account balance is " + balance);
+                    break;
+                case 4 :
+                    System.exit(0);
+
+
+
+
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+
+	}
+}

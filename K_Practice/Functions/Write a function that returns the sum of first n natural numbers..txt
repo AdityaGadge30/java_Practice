@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class MyClass {
+    public static void main(String args[]) {
+        
+        
+     Scanner in = new Scanner(System.in);
+
+      System.out.println("Enter the number upto which we have to calculate sum " );
+      int a = in.nextInt();
+      
+      int greater = sum_of_n(a);
+      System.out.println(greater);
+      
+    }
+    
+
+    static int sum_of_n(int n){
+        
+        int sum = 0 ;
+        
+        for(int i=1;i<=n ; i++){
+            sum = sum + i; 
+        }
+        
+        return sum;
+    }
+}

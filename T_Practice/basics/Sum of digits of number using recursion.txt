@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Main
+{
+    
+    public static int Sum_of_digits_of_number(int num1){
+        
+        if(num1 <= 0){
+            return 0;
+        }else{
+            return (num1 % 10 + Sum_of_digits_of_number(num1/10) ) ;
+        }
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the first number of which we have to find GCD ");
+		
+		int num1 = sc.nextInt();
+		
+	
+		System.out.print(Sum_of_digits_of_number(num1));
+		
+		
+	}
+}

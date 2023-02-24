@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+    
+    Scanner in = new Scanner(System.in);
+    
+    
+    
+    System.out.println("Enter the number upto which we have to find fibbonicci series ");
+    int num = in.nextInt();
+    
+    
+    int a=0;
+    int b=0;
+    int sum = 0;
+    
+    System.out.println("Fibbonicci series : ");
+    
+    while(sum <= num){
+        
+        System.out.println(sum + " ");
+        
+         a = b ;
+         b = sum ; 
+         sum = a+b ;
+    
+        
+    }
+    
+    
+        
+        
+      
+          
+         
+            
+        }
+        
+        
+        
+        
+}

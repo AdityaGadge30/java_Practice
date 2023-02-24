@@ -1,0 +1,26 @@
+
+public class Main
+{
+    public static void split(int num){
+        
+        int temp = num;
+        
+        while(num > 0){
+            
+            temp = num % 10;
+            System.out.print(temp);
+            num = num / 10;
+            
+        }
+        
+        
+    }
+    
+	public static void main(String[] args) {
+	 
+	 int num1=125;
+		
+	    split(num1);
+	}
+	
+}

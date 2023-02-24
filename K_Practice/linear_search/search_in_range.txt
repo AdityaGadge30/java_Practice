@@ -1,0 +1,43 @@
+
+import java.util.Arrays;
+
+public class MyClass{
+
+    public static void main(String[] args) {
+	   
+	   int[] arr = { 12,45,89,26,43,76,82,19};
+	   
+	   int start=0;
+	   int end=6;
+	   
+	   int target = 43;
+	   
+	   int ans = search_in_range(arr,target,start,end);
+	   
+        System.out.println(ans);
+    }
+
+   
+   static int search_in_range(int[] arr , int target , int start , int end){
+       
+       if(arr.length == 0){
+           
+           return -1; 
+           
+       }else{
+ 
+           for(int i =start ; i<end ; i++){
+               
+                if(arr[i] == target){
+                    return i;
+                  
+              }
+               
+           
+           }
+           return -1;
+       }
+      
+   }
+   
+}

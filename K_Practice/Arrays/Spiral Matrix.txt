@@ -1,0 +1,44 @@
+class Solution {
+    public int[][] generateMatrix(int n) {
+        
+        int[][] matrix = new int[n][n];
+        
+        int minRow = 0;
+        int minCol = 0;
+        
+        int maxRow = n-1;
+        int maxCol = n-1;
+        
+        int count = 1;
+        int total = (n*n);
+        while(count <= total){
+            
+            //Top Wall
+            
+            for(int i = minRow, j = minCol; j <= maxCol && count <= total; j++,count++) matrix[i][j] = count;
+            
+            minRow++;
+            
+            //Right Wall
+            
+            for(int i = minRow, j= maxCol; i <= maxRow && count <= total; i++,count++) matrix[i][j] = count;
+            
+            maxCol--;
+            
+            //Bottom Wall
+            
+            for(int i = maxRow, j = maxCol; j >= minCol && count <= total; j--,count++) matrix[i][j] = count;
+            
+            maxRow--;
+            
+            //Left Wall
+            
+            for(int i = maxRow, j = minCol; i >= minRow && count <= total; i--,count++) matrix[i][j] = count;
+            
+            minCol++;
+            
+        }
+        return matrix;
+        
+    }
+}

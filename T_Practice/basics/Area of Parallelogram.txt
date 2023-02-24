@@ -1,0 +1,19 @@
+
+public class Main
+{
+    
+    public static double area(int height , int base){
+
+        double res = height * base;
+        return res;
+        
+    }
+	public static void main(String[] args) {
+		
+		int height = 4;
+		int base = 2;
+		
+		System.out.print(area(height , base));
+		
+	}
+}

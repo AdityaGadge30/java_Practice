@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main
+{
+    
+    public static int Power(int base , int a){
+        
+        if(a!=0){
+            return base * Power(base , a-1);
+        }else{
+            return 1;
+        }
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the first number of which we have to find power ");
+		
+		int num1 = sc.nextInt();
+		
+	    System.out.print("Upto what power we have to find ");
+	    
+	    int num2 = sc.nextInt();
+	
+		System.out.print(Power(num1 , num2));
+		
+		
+	}
+}

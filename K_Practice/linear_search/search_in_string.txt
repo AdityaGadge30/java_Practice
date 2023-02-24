@@ -1,0 +1,41 @@
+
+import java.util.Arrays;
+
+public class MyClass{
+
+    public static void main(String[] args) {
+	   
+	  String str = "Aditya";
+	  
+	  char target = 'i';
+	   
+	   
+	   
+        System.out.println(Arrays.toString(str.toCharArray()));
+        System.out.println(search_in_string(str , target));
+    }
+
+   
+   static boolean search_in_string(String str, char target){
+       
+       if(str.length() == 0){
+           
+           return false; 
+           
+       }else{
+ 
+           for(int i = 0 ; i<str.length() ; i++){
+               
+                if(str.charAt(i) == target){
+                    return true;
+                  
+              }
+               
+           
+           }
+           return false;
+       }
+      
+   }
+   
+}

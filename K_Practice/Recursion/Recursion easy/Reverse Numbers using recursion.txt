@@ -1,0 +1,18 @@
+public class MyClass {
+    public static void main(String args[]) {
+    
+        ans(5);
+    }
+    
+    static void ans(int n){
+        
+        if(n == 0){
+            return;
+        }
+        
+       
+        ans(--n);
+    
+         System.out.println(n);
+    }
+}

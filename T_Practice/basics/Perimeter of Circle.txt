@@ -1,0 +1,17 @@
+
+public class Main
+{
+    
+    public static double perimeter(int radius){
+        
+        double res =  2 * 3.14 * radius;
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		int radius = 2;
+		System.out.print(perimeter(radius));
+		
+	}
+}

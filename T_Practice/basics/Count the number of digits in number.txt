@@ -1,0 +1,33 @@
+
+public class Main
+{
+    public static int split_count(int num){
+        
+        int temp = num;
+        
+        int count=0;
+        
+        while(num > 0){
+            
+            temp = num % 10;
+            
+            count++;
+            num = num / 10;
+            
+        }
+        
+        return count;
+        
+        
+    }
+    
+	public static void main(String[] args) {
+	 
+	 int num1=11253625;
+		
+	   System.out.print(split_count(num1));
+	    
+	    
+	}
+	
+}

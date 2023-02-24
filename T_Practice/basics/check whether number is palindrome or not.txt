@@ -1,0 +1,39 @@
+
+public class Main
+{
+    
+
+    
+    public static int FirstDigit(int n){
+        int rev=0;
+        while(n != 0){
+            int remainder = n % 10;
+            
+            rev = rev * 10 + remainder;
+            
+            
+            n = n/10;
+        };
+        
+        return rev;
+    }
+    
+    
+    
+
+    
+	public static void main(String[] args) {
+		
+	int num = 1001;
+	int new_num = FirstDigit(num);
+	
+	if (num == new_num){
+
+	    System.out.println("Given " + num + " is Palindrome number");
+	}else{
+	    
+	    System.out.println("Given " + num + " is not Palindrome number");
+	}
+		
+	}
+}

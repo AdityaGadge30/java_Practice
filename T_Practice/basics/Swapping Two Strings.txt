@@ -1,0 +1,25 @@
+
+public class Main
+{
+    public static void swap(String s1 , String s2){
+        
+        String temp = s1;
+        s1=s2;s2=temp;
+        
+        System.out.print(s1 + " " + s2);
+      
+    }
+    
+	public static void main(String[] args) {
+		
+		String s1 = "hii";
+		String s2 = "hello";
+		
+		System.out.println(s1 + " " + s2);
+		
+		System.out.println("After Swapping");
+		
+		swap(s1,s2);
+		
+	}
+}

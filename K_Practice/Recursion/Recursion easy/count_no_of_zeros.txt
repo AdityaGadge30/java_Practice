@@ -1,0 +1,31 @@
+public class MyClass {
+    public static void main(String args[]) {
+    
+      
+      int z = count_zeros(100000);
+      System.out.println(z);
+    }
+    
+    static int count_zeros(int n){
+        
+      return helper(n , 0);
+    }
+
+    
+    static int helper(int number , int count){
+        
+        if(number == 0){
+            return count;
+        }
+        
+        int rem = number % 10;
+        
+        if(rem == 0){
+            return helper(number/10 , count+1);
+        }else{
+            return helper(number/10 , count);
+        }
+    }
+    
+    
+}

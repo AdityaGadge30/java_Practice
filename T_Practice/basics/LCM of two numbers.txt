@@ -1,0 +1,33 @@
+
+public class Main
+{
+    public static void lcm(int num1 , int num2){
+        
+        int max;
+        
+        if(num1>num2){
+            max = num1;
+        }else{
+            max = num2;
+        }
+        
+        
+        while(1){
+            if(max % num1 == 0 && max % num2 == 0){
+                System.out.println(num1 + num2 + max);
+                break;
+            }
+            
+            ++max;
+        }
+        
+    }
+    
+	public static void main(String[] args) {
+		
+		int num1=72;
+		int num2=120;
+		
+		lcm(num1,num2);
+	}
+}

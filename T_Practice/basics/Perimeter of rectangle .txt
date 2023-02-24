@@ -1,0 +1,19 @@
+
+public class Main
+{
+    
+    public static double perimeter(int length , int width){
+        
+        double res =  2 * (length + width);
+        return res;
+        
+    }
+    
+	public static void main(String[] args) {
+		int length = 2;
+		int width = 2;
+		
+		System.out.print(perimeter(length , width));
+		
+	}
+}
